@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_training_app/widget/TextWidget.dart';
 
+import 'noliView.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -55,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
               onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>  NoliView()));
 
           }, child:
           TextWidget(text: 'Click Me', color: Colors.white, fontSize: 16)),
