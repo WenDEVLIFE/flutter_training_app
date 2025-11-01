@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          Image.asset('assets/images/noli.jpeg', height: 300, width: 300,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
