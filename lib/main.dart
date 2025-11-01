@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_training_app/widget/TextWidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,12 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         Center(
-          child:   const Text(
-            'You have pushed the button this many times:',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
+          child:  TextWidget(text: 'You have pushed the button this many times:', color: Colors.white, fontSize: 18)
         ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -60,7 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
               onPressed: (){
 
-          }, child: Text('Click Me', style: TextStyle(color: Colors.white),))
+          }, child:
+          TextWidget(text: 'Click Me', color: Colors.white, fontSize: 16)),
         ],
       ),
     );
